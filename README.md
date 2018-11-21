@@ -1,10 +1,16 @@
 # CertPro.sh
 A script to create a local CA and ssl cert for nginx.<br />
 Initialize the script by travelling to the directory,<br />
-Then type (in terminal)
+Be sure your machine has openssl installed.
+If you copy/pasted the script, there's a good chance it's not executable.
+You will get an error. To remedy this type the following commands:
+
+	cd (full file path)
+	sudo chmod u+x ./CertPro.sh
+Then type (in terminal):
 	
 	sudo sh ./CertPro.sh
-The script will then guide you through the process.<br />
+The script will then guide you through the process. Be sure to follow exactly, or your browser might reject the certificate.<br />
 Retrieve the files in the directory you ran the script in.<br />
 -------------------------
 How to Attach to Nginx<br />
@@ -21,11 +27,11 @@ How to Attach to Nginx<br />
   -------------------------
 3. Change the ssl_certificate and ssl_certificate_key path to where your nginx.key and nginx.crt are stored.<br />
 -------------------------
-4. Install the ca.crt in your browser. Keep the private key secret. (Check your browser for a setting like "certificates")<br />
+4. Install the ca.crt in your browser. Keep the private key (nginx.key) secret. If someone gets this key, they can sign their server with you certificate, and fake your identity. (Check your browser for a setting like "certificates")<br />
 -------------------------
 5. Run in terminal:
 	
 	sudo service nginx restart (requires password)
 -------------------------
-6. Then, navigate to the IP your server is on (eg 127.0.0.1)<br />
+6. Then, navigate to the IP your server is on (eg 127.0.0.1 if you're browsing on the server machine)<br />
 ------------------------
