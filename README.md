@@ -37,6 +37,6 @@ Retrieve the files in the directory you ran the script in.<br />
 6. Then, navigate to the IP your server is on (eg 127.0.0.1 if you're browsing on the server machine)
 
 7. In some cases, you may want to force the user to use HTTPS, so add this rewrite rule to your original (port 80) server block.
-```
-return 301 https://$host$request_uri;
-```
+	```
+	return 301 https://$host$request_uri;
+	```
