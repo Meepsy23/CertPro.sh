@@ -15,11 +15,11 @@ The script will then guide you through the process. Be sure to follow exactly, o
 Retrieve the files in the directory you ran the script in.<br />
 -------------------------
 # How to Attach to Nginx
-1.Run in terminal: 
+1. Run in terminal: 
 	
 	sudo nano /etc/nginx/sites-enabled/default
 
-2.Then Add this to the server block:<br />
+2. Then Add this to the server block:<br />
 
 	listen 443 ssl default_server;
 	listen [::]:443 ssl default_server;
