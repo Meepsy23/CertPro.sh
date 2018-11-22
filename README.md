@@ -40,3 +40,5 @@ Retrieve the files in the directory you ran the script in.<br />
 	```
 	return 301 https://$host$request_uri;
 	```
+	
+Disclaimer: As with all internet related things, complete security even with strong cryptography is not guaranteed. This script should be enough to meet or exceed security needs of a local server, however, no gurantees are made of security from using this script.
