@@ -19,7 +19,7 @@ Retrieve the files in the directory you ran the script in.<br />
 	```
 	sudo nano /etc/nginx/sites-enabled/default
 	```
-2. Create a new server block, identical to the default server block. Then paste the following.:<br />
+2. Create a new server block, identical to the default server block (but without its contents). Then paste the following.:<br />
 	```
 	listen 443 ssl default_server;
 	listen [::]:443 ssl default_server;
